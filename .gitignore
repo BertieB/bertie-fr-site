@@ -1,0 +1,15 @@
+# Mac artefacts
+.DS_Store
+__MACOSX/
+._*
+
+# WP junk not needed
+wp-content/plugins/wp-smushit/
+wp-content/plugins/siteorigin-panels/js/
+wp-json/
+feed/
+comments/
+sitemap_index.xml
+xmlrpc.php.xml
+robots.txt
+*.rss
