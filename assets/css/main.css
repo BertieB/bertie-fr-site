@@ -22,14 +22,21 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  width: 220px;
+  width: 240px;
   height: 100vh;
+  /*
+   * Two-layer background: a near-opaque white wash sits on top of the
+   * sfondo texture image, giving it ~15% visibility without touching
+   * the opacity of any child element (avoids z-index hackery entirely).
+   */
   background-color: #fff;
-  /* Subtle dot pattern — stands in for the original sfondo texture */
-  background-image: radial-gradient(circle, rgba(160,160,160,0.28) 1px, transparent 1px);
-  background-size: 18px 18px;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
+    url('https://pub-76f76e42f9ff4ef7bb4d1bf4c9c3b115.r2.dev/uploads/2019/04/sfondo-2019.jpg');
+  background-size: auto, cover;
+  background-position: center, center;
   border-right: 1px solid #e0e0e0;
-  border-left: 4px solid #8b0000;
+  border-left: 8px solid #8b0000;
   display: flex;
   flex-direction: column;
   z-index: 100;
@@ -123,7 +130,7 @@ body {
 
 /* === Main Content === */
 .main-content {
-  margin-left: 220px;
+  margin-left: 240px;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -633,13 +640,13 @@ a:hover { text-decoration: underline; }
 [dir="rtl"] .sidebar {
   left: auto;
   right: 0;
-  border-right: 4px solid #8b0000;
+  border-right: 8px solid #8b0000;
   border-left: 1px solid #e0e0e0;
 }
 
 [dir="rtl"] .main-content {
   margin-left: 0;
-  margin-right: 220px;
+  margin-right: 240px;
 }
 
 [dir="rtl"] .sidebar-nav ul li a {
