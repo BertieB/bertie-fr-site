@@ -32,7 +32,7 @@ body {
   background-color: #fff;
   background-image:
     linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)),
-    url('https://pub-76f76e42f9ff4ef7bb4d1bf4c9c3b115.r2.dev/uploads/2019/04/sfondo-2019.jpg');
+    url('../img/sfondo-2019.jpg');
   background-size: auto, cover;
   background-position: center, center;
   border-right: 1px solid #e0e0e0;
